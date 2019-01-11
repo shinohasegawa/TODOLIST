@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    background: #eee;
+}
+@media screen and (max-width:600px) {
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 1em;
+        background: #eee;
+    }
+}
+
+#app h1 {
+font-size: 2rem;;
+border-bottom: 1px dashed #FFF;
+padding: 16px 0;
+text-align: center;
+}
+
+#app li {
+line-height: 1.5;
+font-size: 2rem;
+border-bottom: 1px dashed #FFF;
+}
+
+#app input[type="text"] {
+    width: 70%;
+    height: 2em;
+    font-size: 1.6rem;
+    padding: 2px;
+}
+
+#app input[type="submit"] {
+    width: 20%;
+    height: 2em;
+    font-size: 1.4rem;
+    padding: 2px;
+}
+
+.confirm {
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.confirm:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+#app li > span.done {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.info {
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+form {
+    margin-top: 1em;
+}
+.center {
+    text-align: center;
+}
+
