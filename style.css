@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 50%;
+    width: 80%;
     margin: auto;
     padding: 1em;
     background: #eee;
@@ -43,8 +43,19 @@ border-bottom: 1px dashed #FFF;
 #app input[type="text"] {
     width: 70%;
     height: 2em;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 2px;
+}
+
+#app input[type="checkbox"] {
+    font-size: 2rem;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.list {
+    font-size: 2rem;
 }
 
 #app input[type="submit"] {
@@ -60,7 +71,7 @@ border-bottom: 1px dashed #FFF;
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
+    background: #668ad8;
     color: #FFF;
     border-bottom: solid 4px #627295;
     border-radius: 3px;

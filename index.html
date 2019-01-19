@@ -7,13 +7,13 @@
 </head>
 <body>
   <div id="app" class="container">
-    <h1>今週中にやることリスト
+    <h1>TODO
         <span class="info">({{ remaining }}/{{ todos.length }})</span>
     </h1>
     <ul v-if="todos.length">
       <li v-for="(todo, index) in todos">
         <input type="checkbox" v-model="todo.isDone">
-        <span :class="{done: todo.isDone}">{{ todo.title }}</span>
+        <span :class="{done: todo.isDone}" class="list">{{ todo.title }}</span>
         <span @click="deleteItem(index)" class="confirm">削除</span>
       </li>
     </ul>
