@@ -47,7 +47,6 @@ h1 + ul {
 }
 
 #app li {
-line-height: 1.5;
 font-size: 2rem;
 border-bottom: 1px dashed #FFF;
 }
@@ -67,6 +66,7 @@ border-bottom: 1px dashed #FFF;
 
 .list {
     font-size: 4rem;
+    vertical-align: middle;
 }
 
 #app input[type="submit"] {
@@ -81,9 +81,9 @@ border-bottom: 1px dashed #FFF;
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #668ad8;
+    background: #fab6eb;
     color: #FFF;
-    border-bottom: solid 4px #627295;
+    border-bottom: solid 4px #fa7edf;
     border-radius: 3px;
 }
 .confirm:active {/*ボタンを押したとき*/
