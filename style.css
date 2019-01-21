@@ -13,15 +13,14 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 1em;
     background: #eee;
 }
 @media screen and (max-width:600px) {
     .container {
-        width: 90%;
-        margin: auto;
+        width: 100%;
         padding: 1em;
         background: #eee;
     }
@@ -29,9 +28,13 @@ body {
 
 #app h1 {
 font-size: 2rem;;
-border-bottom: 1px dashed #FFF;
+/* border-bottom: 1px dashed #FFF; */
 padding: 16px 0;
 text-align: center;
+}
+h1 + ul {
+    width: 80%;
+    margin: auto;
 }
 
 #app li {
