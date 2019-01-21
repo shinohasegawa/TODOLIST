@@ -10,30 +10,39 @@
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
+    background: #eee;
 }
 
 .container {
     width: 100%;
-    margin: auto;
-    padding: 1em;
-    background: #eee;
 }
-@media screen and (max-width:600px) {
+
+
+@media screen and (max-width: 359px) {
     .container {
-        width: 100%;
-        padding: 1em;
-        background: #eee;
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 599px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    .container {
+        max-width: 100%;
     }
 }
 
+
 #app h1 {
-font-size: 2rem;;
+font-size: 4rem;;
 /* border-bottom: 1px dashed #FFF; */
 padding: 16px 0;
 text-align: center;
 }
 h1 + ul {
-    width: 80%;
+    width: 95%;
     margin: auto;
 }
 
@@ -44,7 +53,6 @@ border-bottom: 1px dashed #FFF;
 }
 
 #app input[type="text"] {
-    width: 70%;
     height: 2em;
     font-size: 2rem;
     padding: 2px;
@@ -52,24 +60,23 @@ border-bottom: 1px dashed #FFF;
 
 #app input[type="checkbox"] {
     font-size: 2rem;
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
     vertical-align: middle;
 }
 
 .list {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 #app input[type="submit"] {
-    width: 20%;
     height: 2em;
     font-size: 1.4rem;
     padding: 2px;
 }
 
 .confirm {
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
     display: inline-block;
     padding: 0.5em 1em;

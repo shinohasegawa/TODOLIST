@@ -2,12 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>todoリスト</title>
+  <title>買い物リスト</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <div id="app" class="container">
-    <h1>TODO
+    <h1>買い物リスト
         <span class="info">({{ remaining }}/{{ todos.length }})</span>
     </h1>
     <ul v-if="todos.length">
@@ -18,7 +19,7 @@
       </li>
     </ul>
     <ul v-else>
-        <li class="center">何か入力してね</li>
+        <li class="center">買うものを入力してね！</li>
     </ul>
     <form @submit.prevent="addItem" class="center">
       <input type="text" v-model="newItem">
