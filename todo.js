@@ -34,22 +34,19 @@
           if (!confirm('全て削除しますか?')) {
             return;
           }
-          // this.todos = this.todos.filter(function(todo){
-          //   return !todo.isDone;
-          // });
           this.todos = this.remaining;
         }
       },
       computed: {
           remaining: function() {
-              // var items = this.todos.filter(function(todo){
-              //   return !todo.isDone;
-              // });
-              // return items.length;
               return this.todos.filter(function(todo) {
                 return !todo.isDone;
               })
           }
       }
     });
+    // import VueResource from 'vue-resource'
+
+    // Vue.use(VueResource);
+    // Vue.http.options.root = 'https://hasegawa-f7350.firebaseio.com/data.json'
   })();
